@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
     :root {
-      --my-color: #25D366;
-      --my-color-accent: #2c3e50;
+      --my-color:#25D366;
+      --my-color-accent:#2c3e50;
     }
 
     button {
@@ -27,7 +26,6 @@
       font-family: 'Manrope', sans-serif;
       display: inline-block;
       margin: 10px;
-      font-weight: bold;
     }
 
     .my-color {
@@ -53,31 +51,34 @@
 
     .large {
       padding: 15px 60px;
-      font-size: 18px; /* Tamanho base mantido */
+      font-size: 18px;
     }
 
-    .btn span {
-      display: block;
-      line-height: 1.3;
-      text-align: center;
+    .btn-text {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      line-height: 1.2;
     }
 
-    .btn .main-text {
-      font-size: 45px; /* 2.5x do font-size base de 18px */
+    .btn-text span:first-child {
+      font-size: 18px;
     }
 
-    .btn .sub-text {
-      font-size: 18px; /* Tamanho base */
+    .btn-text span:last-child {
+      font-size: 12px;
+      font-weight: normal;
     }
   </style>
-
 </head>
 
 <body>
 
   <button class="btn large my-color rounded threeD" type="button" onclick="navigate()">
-    <span class="main-text">QUERO MEU SISTEMA AGORA</span>
-    <span class="sub-text">menos de 0,83 centavos por dia</span>
+    <div class="btn-text">
+      <span>QUERO MEU SISTEMA AGORA</span>
+      <span>menos de 0,83 centavos por dia</span>
+    </div>
   </button>
 
   <script>
@@ -87,5 +88,4 @@
   </script>
 
 </body>
-
 </html>
