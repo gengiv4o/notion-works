@@ -2,13 +2,30 @@
 <html lang="en">
 
 <head>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
     :root {
-      --my-color:#25D366;
-      --my-color-accent:#2c3e50;
+      --my-color: #25D366;
+      --my-color-accent: #2c3e50;
+      --black: #3c3c3c;
+      --black-accent: #2d2d2d;
+      --blue: #809bce;
+      --blue-accent: #5c6f94;
+      --purple: #8a508f;
+      --purple-accent: #5d3661;
+      --mint: #b8e0d4;
+      --mint-accent: #8ba89f;
+      --pink: #eac4d5;
+      --pink-accent: #b495a3;
+      --green: #74a892;
+      --green-accent: #5e8675;
+      --red: #d74a49;
+      --red-accent: #b53f3f;
+      --orange: #d35400;
+      --orange-accent: #9e4102;
+      --yellow: #f1c40f;
+      --yellow-accent: #bd9a0c;
     }
 
     button {
@@ -21,10 +38,15 @@
       outline: inherit;
     }
 
+    i {
+      padding-right: 2px;
+    }
+
     .btn {
       text-align: center;
       color: #ffffff;
-      font-family: 'Manrope', sans-serif;
+      font-family: sans-serif;
+      font-weight: bold;
       display: inline-block;
       margin: 10px;
     }
@@ -50,14 +72,9 @@
       border-radius: 20px;
     }
 
-    .small {
-      padding: 5px 20px;
-      font-size: 10px;
-      line-height: 1.2em;
-    }
-
-    strong {
-      font-weight: bold;
+    .large {
+      padding: 15px 60px;
+      font-size: 18px;
     }
   </style>
 
@@ -65,9 +82,7 @@
 
 <body>
 
-  <button class="btn small my-color rounded threeD" type="button" onclick="navigate()">
-    <strong>QUERO MEU SISTEMA AGORA</strong>
-  </button>
+  <button class="btn large my-color rounded threeD" type="button" onclick="navigate()">QUERO MEU SISTEMA AGORA</button>
 
   <script>
     function navigate() {
